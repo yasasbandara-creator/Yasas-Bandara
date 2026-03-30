@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasas Bandara — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style_profile.css">
+</head>
+<body>
+
+<!-- Cursors -->
+<div id="cur-o"></div>
+<div id="cur-i"></div>
+
+<!-- BG canvas -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">SECURE</div>
+  <div class="ham" id="ham" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#education">EDU</a></li>
+    <li><a href="#skills">SKILLS</a></li>
+    <li><a href="#projects">PROJECTS</a></li>
+    <li><a href="#connect">CONNECT</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-tag">SYSTEM ONLINE // PORTFOLIO V2.0</div>
+      <h1 class="hero-name">I'm<br>YASAS<br><span>BANDARA</span></h1>
+      <div class="hero-title">Cyber Security Student</div>
+      <p class="hero-desc">
+        Motivated individual pursuing BTEC HND in Computing (Cyber Security) at CINEC Campus.
+        Passionate about network defense, cryptography, ethical hacking and the elegant mathematics underlying digital security.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">VIEW PROJECTS</a>
+        <a href="#connect" class="btn-outline">CONNECT</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-wrap">
+        <div class="hex-bg"></div>
+        <div class="hex-ring"></div>
+        <div class="hex-ring"></div>
+        <div class="hex-ring"></div>
+        <div class="avatar-hex">
+          <img src="Gemini_Generated_Image_unk3enunk3enunk3.png" alt="Yasas Bandara">
+          <div class="avatar-scan-line"></div>
+        </div>
+        <div class="float-tag">CYBER SEC</div>
+        <div class="float-tag">KALI LINUX</div>
+        <div class="float-tag">CTF MODE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-inner">
+    <div class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">ABOUT ME</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>Motivated individual seeking to enter the IT industry, eager to leverage strong analytical skills and a deep passion for technology. Driven by curiosity across cyber security, mathematics, and physics.</p>
+        <p>Committed to continuous learning and development, with a keen ability to adapt quickly to emerging threats and technologies. Known for problem-solving abilities and a collaborative spirit.</p>
+      </div>
+      <div>
+        <ul class="info-list">
+          <li><span class="info-key"><i class="fas fa-shield-alt"></i> &nbsp;FOCUS</span><span class="info-val">Cyber Security Engineering</span></li>
+          <li><span class="info-key"><i class="fas fa-language"></i> &nbsp;LANG</span><span class="info-val">Sinhala (Native) · English (Fluent)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OBJECTIVES ── -->
+<section id="objectives" style="padding-top:0">
+  <div class="section-inner">
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">OBJECTIVES</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="obj-grid reveal">
+      <div class="obj-card">
+        <div class="obj-icon"><i class="fas fa-shield-virus"></i></div>
+        <h3>CYBER SECURITY ENGINEERING</h3>
+        <p>Establish a successful career in cyber security and contribute to innovative, resilient technology solutions.</p>
+      </div>
+      <div class="obj-card">
+        <div class="obj-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>ACADEMIC EXCELLENCE</h3>
+        <p>Complete BTEC HND in Computing with distinction and pursue further studies in computer science.</p>
+      </div>
+      <div class="obj-card">
+        <div class="obj-icon"><i class="fas fa-code"></i></div>
+        <h3>TECHNICAL MASTERY</h3>
+        <p>Develop expertise in modern programming languages and security-focused development methodologies.</p>
+      </div>
+      <div class="obj-card">
+        <div class="obj-icon"><i class="fas fa-users"></i></div>
+        <h3>COLLABORATION</h3>
+        <p>Collaborate with diverse teams and contribute to projects that make a meaningful positive impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education">
+  <div class="section-inner">
+    <div class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">EDUCATION</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="edu-timeline">
+
+      <div class="edu-item reveal">
+        <div class="edu-dot"><i class="fas fa-circle"></i></div>
+        <div class="edu-card">
+          <div class="edu-badge">CURRENT · 2025–PRESENT</div>
+          <h3>Pearson BTEC HND in Computing (Cyber Security)</h3>
+          <div class="edu-inst">CINEC Campus, Malabe</div>
+          <div class="edu-date">February 2025 – PRESENT</div>
+          <div class="edu-desc">Comprehensive program encompassing cybersecurity principles, cryptography, network defense, digital forensics, and information security risk management.</div>
+        </div>
+      </div>
+
+      <div class="edu-item reveal">
+        <div class="edu-dot"><i class="fas fa-circle"></i></div>
+        <div class="edu-card">
+          <div class="edu-badge">CURRENT · 2026–PRESENT</div>
+          <h3>Diploma in English and Literature</h3>
+          <div class="edu-inst">Aquinas College</div>
+          <div class="edu-date">January 2026 – PRESENT</div>
+        </div>
+      </div>
+
+      <div class="edu-item reveal">
+        <div class="edu-dot"><i class="fas fa-circle"></i></div>
+        <div class="edu-card">
+          <div class="edu-badge">A/L EXAMINATION · 2024</div>
+          <h3>Advanced Level Examination</h3>
+          <div class="edu-inst">Ananda Sasthralaya, Kotte</div>
+          <div class="edu-date">January 2023 – December 2024</div>
+          <div class="edu-desc">Results pending — Combined Mathematics & Physics stream.</div>
+        </div>
+      </div>
+
+      <div class="edu-item reveal">
+        <div class="edu-dot"><i class="fas fa-circle"></i></div>
+        <div class="edu-card">
+          <div class="edu-badge">O/L EXAMINATION · 2021–2022</div>
+          <h3>Ordinary Level Examination</h3>
+          <div class="edu-inst">Vidyawardana Maha Vidyalaya, Palawatta</div>
+          <div class="edu-date">January 2011 – May 2022</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills" style="background:rgba(81,232,255,0.015)">
+  <div class="section-inner">
+    <div class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">TECHNICAL SKILLS</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-box">
+        <h3><i class="fas fa-code"></i> &nbsp;PROGRAMMING</h3>
+        <div class="skill-row">
+          <div class="skill-info"><span class="skill-name">Python</span><span class="skill-level">INTERMEDIATE · 70%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="70"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-info"><span class="skill-name">HTML / CSS</span><span class="skill-level">INTERMEDIATE · 75%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-info"><span class="skill-name">Java</span><span class="skill-level">BEGINNER · 50%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="50"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-level">BEGINNER · 40%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="40"></div></div>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h3><i class="fas fa-terminal"></i> &nbsp;SECURITY TOOLS</h3>
+        <div class="tool-pills">
+          <span class="pill">Kali Linux</span>
+          <span class="pill">Tcpdump</span>
+          <span class="pill">Wireshark</span>
+          <span class="pill">Nmap</span>
+          <span class="pill">AWS Security Hub</span>
+          <span class="pill">ELK Stack</span>
+          <span class="pill">Git</span>
+          <span class="pill">Metasploit</span>
+          <span class="pill">Burp Suite</span>
+          <span class="pill">Linux CLI</span>
+        </div>
+        <h3 style="margin-top:24px"><i class="fas fa-flask"></i> &nbsp;PROBLEM SOLVING</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COMPETENCIES ── -->
+<section id="competencies">
+  <div class="section-inner">
+    <div class="sec-head reveal">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">CORE COMPETENCIES</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="comp-grid reveal">
+      <div class="comp-card">
+        <div class="comp-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>PROBLEM SOLVING</h3>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon"><i class="fas fa-users"></i></div>
+        <h3>TEAM COLLABORATION</h3>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>ANALYTICAL THINKING</h3>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon"><i class="fas fa-sync-alt"></i></div>
+        <h3>ADAPTABILITY</h3>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon"><i class="fas fa-lock"></i></div>
+        <h3>SECURITY MINDSET</h3>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon"><i class="fas fa-infinity"></i></div>
+        <h3>CONTINUOUS LEARNING</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects" style="background:rgba(81,232,255,0.015)">
+  <div class="section-inner">
+    <div class="sec-head reveal">
+      <span class="sec-num">06</span>
+      <h2 class="sec-title">PROJECTS</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="proj-grid reveal">
+      <div class="proj-card">
+        <div class="proj-top">
+          <span class="proj-type">ACADEMIC · TEAMWORK</span>
+          <span class="proj-icon"><i class="fas fa-database"></i></span>
+        </div>
+        <h3>STUDENT PROBLEM MANAGEMENT SYSTEM</h3>
+        <p class="proj-desc">Developed a student problem management system using Python with database connectivity for storing, querying, and retrieving student records.</p>
+        <div class="tool-pills">
+          <span class="pill">Python</span>
+          <span class="pill">SQLite</span>
+          <span class="pill">GUI Dev</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-top">
+          <span class="proj-type">PERSONAL · WEB</span>
+          <span class="proj-icon"><i class="fas fa-globe"></i></span>
+        </div>
+        <h3>PERSONAL PORTFOLIO WEBSITE</h3>
+        <p class="proj-desc">Created a responsive personal portfolio website showcasing projects and skills, featuring matrix animations, custom cursors, and a cyber aesthetic.</p>
+        <div class="tool-pills">
+          <span class="pill">HTML5</span>
+          <span class="pill">CSS3</span>
+          <span class="pill">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CERTIFICATIONS ── -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="sec-head reveal">
+      <span class="sec-num">07</span>
+      <h2 class="sec-title">CERTIFICATIONS</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="cert-list reveal">
+      <div class="cert-item">
+        <div class="cert-info">
+          <h3>Introduction to Computer Science</h3>
+          <p>Online Learning Platform · 2024</p>
+        </div>
+        <i class="fas fa-certificate cert-icon"></i>
+      </div>
+      <div class="cert-item">
+        <div class="cert-info">
+          <h3>Python Programming Fundamentals</h3>
+          <p>Self-Study · 2024</p>
+        </div>
+        <i class="fas fa-certificate cert-icon"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INTERESTS ── -->
+<section id="interests">
+  <div class="section-inner">
+    <div class="sec-head reveal">
+      <span class="sec-num">08</span>
+      <h2 class="sec-title">INTERESTS</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="int-grid reveal">
+      <div class="int-card"><i class="fas fa-laptop-code"></i><span>Programming</span></div>
+      <div class="int-card"><i class="fas fa-shield-alt"></i><span>Cyber Security</span></div>
+      <div class="int-card"><i class="fas fa-square-root-alt"></i><span>Mathematics</span></div>
+      <div class="int-card"><i class="fas fa-atom"></i><span>Physics</span></div>
+      <div class="int-card"><i class="fas fa-gamepad"></i><span>Gaming</span></div>
+      <div class="int-card"><i class="fas fa-music"></i><span>Music</span></div>
+      <div class="int-card"><i class="fas fa-mobile-alt"></i><span>Tech Trends</span></div>
+      <div class="int-card"><i class="fas fa-flag"></i><span>CTF Events</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONNECT ── -->
+<section id="connect">
+  <div class="section-inner">
+    <div class="sec-head reveal" style="justify-content:center">
+      <span class="sec-num">09</span>
+      <h2 class="sec-title">CONNECT WITH ME</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="contact-info reveal">
+      <div class="contact-item"><i class="fas fa-phone"></i> +94 71 709 6093</div>
+      <div class="contact-item"><i class="fas fa-envelope"></i> yasasbandaragreat@gmail.com</div>
+      <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Kaduwela, Sri Lanka</div>
+    </div>
+    <div class="social-row reveal">
+      <a href="https://facebook.com/ft.Y.xhQn" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/Yasas_05" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/_yasas._/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/yohan-yasas-a61885256" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/yasasbandara-creator" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>© <span id="yr"></span> — ALL RIGHTS RESERVED &nbsp;·&nbsp; <span>YASAS BANDARA</span></p>
+</footer>
+
+<!-- Floating Contact -->
+<button id="contactBtn" title="Contact Me"><i class="fas fa-comment-dots"></i></button>
+<div id="contactPopup">
+  <h3>// CONTACT ME</h3>
+  <form id="contactForm" action="https://formspree.io/f/maqnvrjv" method="POST">
+    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <div class="popup-row">
+      <button type="submit" class="send">SEND</button>
+      <button type="button" class="close-btn" onclick="toggleContact()">CLOSE</button>
+    </div>
+  </form>
+</div>
+
+<div id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></div>
+
+<script src="script_profile.js"></script>
+</body>
+</html>

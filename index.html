@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasas Bandara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursors -->
+<div id="cursor-outer"></div>
+<div id="cursor-inner"></div>
+<div id="cursor-crosshair"></div>
+
+<!-- BG layers -->
+<canvas id="matrixCanvas"></canvas>
+<canvas id="particleCanvas"></canvas>
+<div class="vignette"></div>
+<div class="scanlines"></div>
+
+<!-- Card -->
+<div class="wrapper">
+  <div class="card">
+    <div class="corner-br"></div>
+    <div class="corner-tr"></div>
+
+    <div class="status-bar">
+      <span><span class="status-dot"></span>SYSTEM ONLINE</span>
+      <span id="liveTime">00:00:00</span>
+      <span>SECURE</span>
+    </div>
+
+    <div class="avatar-wrap">
+      <img src="Gemini_Generated_Image_unk3enunk3enunk3.png" alt="Yasas Bandara">
+      <div class="avatar-ring"></div>
+      <div class="avatar-scan"></div>
+    </div>
+
+    <div class="sys-label">IDENTITY VERIFIED</div>
+    <div class="name">YASAS BANDARA</div>
+    <div class="tagline">Cyber Security Student</div>
+
+    <div class="type-wrap" id="typeTarget"></div>
+
+    <div class="divider"><span>ACCESS PORTAL</span></div>
+
+    <button class="btn" onclick="enterSite()">
+      <span class="btn-icon">⬡</span>
+      ENTER PORTFOLIO
+    </button>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-title" data-text="LOADING...">LOADING...</div>
+    <div class="loader-log" id="loaderLog">Initializing...</div>
+    <div class="progress-track"><div id="progressFill"></div></div>
+    <div id="progressPct">0%</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
